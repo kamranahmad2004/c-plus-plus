@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1695145802 source:c:\users\a1\desktop\todo project\todo project\main.cpp
+	<iostream>
+	<fstream>
+
+1706008500 source:c:\users\a1\desktop\todo project\main.cpp
+	<iostream>
+	<fstream>
+
