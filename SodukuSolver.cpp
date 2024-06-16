@@ -3,6 +3,7 @@ using namespace std;
 
 bool isSafe(char board[9][9], int row, int col, int num)
 {
+    // checking row and column
     for(int i=0; i<9; i++)
     {
         if(board[row][i] == (char)(num + '0'))
@@ -15,6 +16,7 @@ bool isSafe(char board[9][9], int row, int col, int num)
         }
     }
 
+    // checking grid cells -> we have to find the starting point of grid
     int sr = (row / 3) * 3;
     int sc = (col / 3) * 3;
     for(int i=sr; i<sr + 3; i++)
@@ -36,7 +38,7 @@ bool helper(char board[9][9], int row, int col)
     {
         return true;
     }
-
+    // calculate the row and column in each recursion level
     int nrow = 0;
     int ncol = 0;
     if (col != 8)
